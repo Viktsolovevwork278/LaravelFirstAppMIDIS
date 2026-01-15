@@ -11,10 +11,6 @@
 }
 
 
-body {
-    background-color: brown;
-}
-
 h1 {
     font-size: 2rem;
     font-weight: 600;
@@ -25,4 +21,45 @@ p {
     font-size: 1.5rem;
     font-weight: 500;
     color: #ffffff;
+}
+html, body { 
+    height: 100%; 
+    
+}
+
+.header, .footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+        margin: 50px 0 50px 0;
+
+}
+
+.main-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+.cards {
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.card-price{
+    color: #000;
 }

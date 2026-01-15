@@ -17,4 +17,6 @@ class TestController extends Controller
         $users = User::all();
         return view('second', compact('users'));
     }
+
+    
 }
