@@ -60,8 +60,9 @@ html, body {
 
 .cards {
     margin: 50px 0 50px 0;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 .cards-title {
     font-size: 24px;

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -9,8 +11,10 @@ class ProductController extends Controller
 {
     public function index()
     {
+        $orders = Order::withCount('products')->get();
         $products = Product::all();
-        return view('products.index', compact('products'));
+        $categories = Category::all();
+        return view('products.index', compact('products', 'categories', 'orders'));
     }
 
     public function create()
